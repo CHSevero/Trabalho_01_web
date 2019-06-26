@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Restaurante</title>
+	<link rel="stylesheet" type="text/css" href="css/CSS.css"/>
+</head>
+<body>
+	<div id="menu">
+		<ul>
+			<li><a href="Index.html">Home</a></li>
+			<li><a href="Sobre_o_site.html">Sobre o Restaurante</a></li>
+			<li><a href="Galeria_de_Pratos.html">Galeria de Pratos</a></li>
+			<li><a href="Contato.html">Contato</a></li>
+		</ul>
+	</div>
+	<div id="divide">
+	<section ">
+			<form id="formulario">
+				<p>Nome: <input type="text" name="nome" title="Digite seu nome, por favor"></p>
+				<p>Email: <input type="text" name="email" title="Digite seu email, por favor"></p>
+				<p>Telefone: <input type="text" name="telefone" id="tele" title="Digite seu telefone, por favor"> </p>
+				<p>Mensagem:</p><p><textarea id="area" cols="50" rows="10" title="Digite uma mensagem"></textarea></p>
+				<p><button type="subimt">Enviar</button><p>
+			</form>
+	</section>
+	</div>
+	<footer>
+		<p>By chsevero</p>
+		<p>Telefone: 0000000000</p>
+		<p>Data: 20 de Abril de 2019</p>
+	</footer>
+	<script	type="text/javascript"	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery/jquery.mask.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			// body...
+			$("#tele").mask("(00) 0000-0000")
+			$(document).tooltip()
+		})
+	</script>
+</body>
+</html>

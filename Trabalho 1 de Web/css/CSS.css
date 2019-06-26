@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+
+body{
+	background-color: #98999b;
+}
+div#menu {
+	display: block;
+}
+
+div#menu ul {
+	list-style: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: -20px;
+	left: 370px;
+}
+
+div#menu li{
+	display: inline-block;
+	background-color: #dddddd;
+	padding: 10px;
+	margin: 2px;
+	transition: background-color 1s;
+}
+
+div#menu li:hover {
+	background-color: #606060;
+}
+
+div#divide{
+	 margin-left:50px;
+	margin-top: 50px;
+}
+footer {
+	clear:both;
+	border-top: 1px solid #606060;
+}
+footer p{
+	text-align: center;
+}
+div#divide p{
+	text-align: center;
+}
+div#divide h1{
+	text-align: center;
+}
+/* Formatação de imagens com legendas.*/
+
+figure.foto-legenda{
+	margin: 0px;
+	display: inline-block;
+	width: 400px;
+	height: 400px;
+	position: relative;
+	border:1px solid white;
+	box-shadow: 1px 1px 4px;
+}
+
+figure.foto-legenda img{
+	width: 400px;
+	height: 400px;
+}
+
+figure.foto-legenda figcaption{
+
+	opacity: 0;
+	position: absolute;
+	top: 0px;
+	background-color: rgba(0,0,0,.4);
+	color: white;
+	width: 400px;
+	height: 400px;
+	padding: 10px;
+	box-sizing: border-box;
+	transition: opacity 1s;
+}	
+
+figure.foto-legenda:hover figcaption {
+	opacity: 1;
+}
+
+img#logo{
+	width: 400px;
+	height: 400px;
+}
+
+
+
+div#historia p{
+	text-align: justify;
+	text-indent: 50;
+	font-size: 20pt;
+	color: white;
+
+}
+
+div#esconder{
+	display: none;
+}
+
